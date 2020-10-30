@@ -1,0 +1,12 @@
+* {
+	font-family: sans-serif;
+}
+body {
+	background: #3c2c83;
+	color: #fff;
+}
+header {
+	width: 100vw;
+	height: 100vh;
+	background: url() no-repeat 50%;
+}
