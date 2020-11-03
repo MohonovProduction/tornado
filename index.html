@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<header>
+	<header id="header">
 		<div class="logo">
 			<img src="img/logo.png">
 			<div>
@@ -16,7 +16,7 @@
 		</div>
 		<button class="header">
 			<p>ЗАПИСАТЬСЯ</p>
-			<p>НА ПРОБНОЕ ЗАНЯТИЕ</p>
+			<p>НА ПРОБНОЕ ЗАНЯТИЕ</p> 
 		</button>
 	</header>
 	<nav>
@@ -40,115 +40,114 @@
 				<h2>О клубе</h2>
 				<div class="about">
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas velit, in euismod turpis. Aenean mollis volutpat velit a pulvinar. Vestibulum leo velit, vulputate eget efficitur a, bibendum ut augue. Suspendisse pellentesque finibus nisi, nec sollicitudin dui eleifend ornare. Nulla ac elementum quam, in dignissim velit. Vestibulum hendrerit maximus ex in fringilla. Aliquam metus augue, pellentesque id risus vel, vestibulum lobortis libero. Mauris mollis blandit nisi, in aliquam dolor maximus at.</p>
-					<img src="img/headerbg.png" width="300px">
+					<img src="img/swimingpool.jpg">
 				</div>
 			</section>
-			<section  id="galery">
+			<section  id="galery" class="galery">
 				<h2>Галерея</h2>
-				<div>
-					<button></button>
-					<div>
-						<img src="">
+				<div class="galery">
+					<button><span>&lt;</span></button>
+					<div class="card">
+						<img src="img/example.png">
+					</div>
+					<button><span>&gt;</span></button>
+					<div class="text">
 						<h3>Описание фотографии</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in blandit sapien. Praesent fermentum urna quis libero accumsan, ut eleifend felis lacinia. Proin id orci finibus, lacinia ante ut, varius massa. Aliquam gravida purus nunc, ut aliquam justo placerat vitae. Nulla sed egestas enim. Etiam urna ligula, consectetur vitae eleifend eu, convallis at eros. Phasellus tristique semper libero, sed blandit est viverra vel. Suspendisse potenti. Proin ullamcorper ipsum a dolor imperdiet, sit amet vehicula mauris volutpat. Pellentesque eget blandit sem, in semper ipsum. In hac habitasse platea dictumst. Pellentesque tincidunt finibus hendrerit.</p>
 					</div>
-					<button></button>
 				</div>
 			</section>
 			<section id="reviews">
 				<h2>Отзывы</h2>
-				<div style="width:560px; height:800px; overflow:hidden; position:relative; z-index: -1;">
-					<iframe style="width:100%; height:100%; border:1px solid #e6e6e6; border-radius:8px;  box-sizing:border-box" src="https://yandex.ru/maps-reviews-widget/26508007591?comments">
-					</iframe>
-					<a href="https://yandex.ru/maps/org/vaterpolny_klub_tornado/26508007591/" target="_blank" style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0">Ватерпольный клуб Торнадо на карте Санкт‑Петербурга — Яндекс.Карты
-					</a>
+				<div  class="reviews">
+					<div style="width:560px; height:800px; overflow:hidden; position:relative; z-index: -1; ">
+						<iframe style="width:100%; height:100%; border:1px solid #e6e6e6; border-radius:8px;  box-sizing:border-box" src="https://yandex.ru/maps-reviews-widget/26508007591?comments">
+						</iframe>
+						<a href="https://yandex.ru/maps/org/vaterpolny_klub_tornado/26508007591/" target="_blank" style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0">Ватерпольный клуб Торнадо на карте Санкт‑Петербурга — Яндекс.Карты
+						</a>
+					</div>
 				</div>
 			</section>
 			<section id="map" class="map">
 				<h2>Карта</h2>
 				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0fb783dc29fa08daac38b8af4c2f0439151e3ffa1952a972bd5072064ec2019b&amp;source=constructor" width="100%" height="100vh" frameborder="0" class="map"></iframe>
 			</section>
-			<section id="schedule">
-				<div>
-					<table>
-						<caption>Басейн &laquo;МЧС&raquo;</caption>
-						<tr>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-					</table>
-					<table>
-						<caption>Басейн &laquo;Волна&raquo;</caption>
-						<tr>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-					</table>
-					<table>
-						<caption>Басейн &laquo;Серебряная вода&raquo;</caption>
-						<tr>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-					</table>
+			<section id="schedule" class="schedule">
+				<h2>Расписание</h2>
+				<div class="schedule">
+					<div class="tablebg">
+						<table class="schedule">
+							<caption>Басейн &laquo;МЧС&raquo;</caption>
+							<tr>
+								<td></td>
+								<td>Младшая группа</td>
+								<td>Средняя группа</td>
+								<td>Старшая группа</td>
+							</tr>
+							<tr>
+								<td>Понедельник</td>
+								<td>18.30 - 19.45</td>
+								<td>19.00 - 20.15</td>
+								<td>19.45 - 21.00</td>
+							</tr>
+							<tr>
+								<td>Среда</td>
+								<td>18.30 - 19.45</td>
+								<td>19.00 - 20.15</td>
+								<td>19.45 - 21.00</td>
+							</tr>
+							<tr>
+								<td>Пятница</td>
+								<td>18.30 - 19.45</td>
+								<td>19.00 - 20.15</td>
+								<td>19.45 - 21.00</td>
+							</tr>
+						</table>
+					</div>
+					<div class="tablebg">
+						<table class="schedule">
+							<caption>Басейн &laquo;Волна&raquo;</caption>
+							<tr>
+								<td></td>
+								<td>9-12 лет</td>
+							</tr>
+							<tr>
+								<td>Вторник</td>
+								<td>16.15 - 17.30</td>
+							</tr>
+							<tr>
+								<td>Четверг</td>
+								<td>16.15 - 17.30</td>
+							</tr>
+						</table>
+					</div>
+					<div class="tablebg">
+						<table class="schedule">
+							<caption>Басейн &laquo;Серебряная вода&raquo;</caption>
+							<tr>
+								<td></td>
+								<td>6-9 лет</td>
+							</tr>
+							<tr>
+								<td>Среда</td>
+								<td>16.00 - 17.00</td>
+							</tr>
+							<tr>
+								<td>Пятница</td>
+								<td>16.00 - 17.00</td>
+							</tr>
+						</table>
+					</div>
 				</div>
 			</section>
-			<section id="cost">
+			<section id="cost" class="cost">
+				<h2>Стоимость</h2>
 				<table>
-					<caption>Стоимость</caption>
 					<tr>
-						<td>Количество занятий</td>
-						<td>Басейн &laquo;МЧС&raquo;</td>
-						<td>Басейн &laquo;Волна&raquo;</td>
-						<td>Басейн &laquo;Серебряная вода&raquo;</td>
+						<th>Количество занятий</th>
+						<th>Басейн &laquo;МЧС&raquo;</th>
+						<th>Басейн &laquo;Волна&raquo;</th>
+						<th>Басейн &laquo;Серебряная вода&raquo;</th>
 					</tr>
 					<tr>
 						<td>Пробное занятие</td>
@@ -158,43 +157,43 @@
 					</tr>
 					<tr>
 						<td>1</td>
-						<td>800₽</td>
-						<td>800₽</td>
-						<td>800₽</td>
+						<td>800&#x20bd;</td>
+						<td>800&#x20bd;</td>
+						<td>800&#x20bd;</td>
 					</tr>
 					<tr>
 						<td>4</td>
 						<td></td>
-						<td>2800₽</td>
-						<td>3000₽</td>
+						<td>2800&#x20bd;</td>
+						<td>3000&#x20bd;</td>
 					</tr>
 					<tr>
 						<td>5</td>
-						<td>3750₽</td>
+						<td>3750&#x20bd;</td>
 						<td></td>
 						<td></td>
 					</tr>
 					<tr>
 						<td>8</td>
 						<td></td>
-						<td>4800₽</td>
-						<td>5600₽</td>
+						<td>4800&#x20bd;</td>
+						<td>5600&#x20bd;</td>
 					</tr>
 					<tr>
 						<td>10</td>
-						<td>7000₽</td>
+						<td>7000&#x20bd;</td>
 						<td></td>
 						<td></td>
 					</tr>
 					<tr>
 						<td>20</td>
-						<td>12000₽</td>
+						<td>12000&#x20bd;</td>
 						<td></td>
 						<td></td>
 					</tr>
 				</table>
 			</section>
-			<section id="contacts">
+			<section id="contacts" class="contacts">
 				<h2>Контакты</h2>
 				<div class="contacts">
 					<img src="files/vk.png">
@@ -221,6 +220,7 @@
 	</main>
 	<footer>
 		<ul>
+			<li><a href="#header">Записаться на пробное занятие</a></li>
 			<li><a href="#about">О клубе</a></li>
 			<li><a href="#galery">Галерея</a></li>
 			<li><a href="#reviews">Отзывы</a></li>
@@ -228,8 +228,9 @@
 			<li><a href="#schedule">Расписание</a></li>
 			<li><a href="#cost">Стоимость</a></li>
 			<li><a href="#contacts">Контакты</a></li>
+			<li><a href="">Политика конфидециальности</a></li>
 		</ul>
-		<ul>
+		<div class="contacts-footer">
 			<div>
 				<img src="files/vk.png">
 				<p>ВКонтакте</p>
@@ -250,7 +251,7 @@
 				<img src="files/telegram.png">
 				<p>Telegram</p>
 			</div>
-		</ul>
+		</div>
 	</footer>
 </body>
 </html>
