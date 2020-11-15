@@ -21,9 +21,6 @@
 	section {
 		padding: 70px 10vw 0px;
 	}
-	.hidden {
-		display: none;
-	}
 /* header */
 	header {
 		display: flex;
@@ -31,7 +28,7 @@
 		justify-content: center;
 		align-items: center;
 		height: 100vh;
-		background: url(img/headerbg.png) no-repeat 50%;
+		background: #3c2c83 url(img/headerbg.jpg) no-repeat 50%;
 		background-size: 110%;
 	}
 	.logo {
@@ -39,6 +36,7 @@
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
+		margin-bottom: 20px;
 	}
 	.logo img {
 		margin: 20px;
@@ -52,7 +50,7 @@
 	}
 	h1 {
 		margin: 0px 10px;
-		font-size: 5em;
+		font-size: 6em;
 		font-weight: normal;
 		text-align: center;
 		background-image: -webkit-gradient( linear, left top, 	left bottom, color-stop(0, #f22), color-stop(0.15, #f7921d), color-stop(0.5, #fff), color-stop(1, #f7921d) );
@@ -70,10 +68,12 @@
 
 	button.header {
 		padding: 12px;
+		margin-top: 20px;
 		border: 3px solid #f7921d;
 		color: #fff;
 		background: rgba(0,0,0,0);
 		user-select: none;
+		cursor: pointer;
 		outline: none;
 		opacity: 80%;
 		transition: 0.3s;
@@ -82,8 +82,6 @@
 		transform: translateY(-10px);
 		opacity: 100%;
 		transition: 0.3s;
-	}
-	button.header:active {
 	}
 	button.header span:nth-child(1) {
 		font-size: 35px;
@@ -97,10 +95,13 @@
 		bottom: 40px;
 		right: 40px;
 		z-index: 2;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 	.aside button {
-		width: 100px;
-		height: 100px;
+		width: 110px;
+		height: 110px;
 		user-select: none;
 		outline: none;
 		color: #fff;
@@ -108,6 +109,28 @@
 		background: rgba(60,30,141,0.5);
 		border: 3px solid #f7921d;
 		border-radius: 50%;
+		transition: 0.3s;
+	}
+	.aside button:hover {
+		transform: scale(1.05);
+		transition: 0.3s;
+	}
+	.aside button:active {
+		transform: scale(1.05);
+		transition: 0.3s;
+	}
+	.aside img {
+		width: 70px;
+		height: 70px;
+		margin: 10px;
+		transition: 0.3s;
+	}
+	.aside img:hover {
+		transform: scale(1.05);
+		transition: 0.3s;
+	}
+	.aside img:last-of-type {
+		margin-bottom: 50px;
 	}
 /* nav */
 	nav {
@@ -175,15 +198,13 @@
 		grid-column: 2/3;
 	}
 	.galery button {
+		align-self: center;
 		user-select: none;
 		outline: none;
-		align-self: center;
 		background: rgba(0,0,0,0);
 		border: none;
 		color: #fff;
 		font-size: 150px;
-		margin-left: 0px;
-		margin-right: 0px;
 		cursor: pointer;
 	}
 	.galery button:first-child {
@@ -204,11 +225,6 @@
 		width: 100%;
 	}
 
-	.card {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
 	.card h3 {
 		width: 100z%;
 		text-align: left;
@@ -370,4 +386,8 @@
 		display: flex;
 		flex-direction: row;
 		align-items: center;
+	}
+/* JS */
+	.hidden {
+		display: none;
 	}
