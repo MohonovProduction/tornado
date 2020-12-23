@@ -233,13 +233,14 @@
 		width: 100%;
 	}
 
-	.card h3 {
-		width: 100z%;
+	.text h3 {
+		width: 100%;
 		text-align: left;
 		margin: 30px 0px 10px 0px;
 	}
-	.card p {
-		margin: 0px;
+	.text p {
+		text-align: center;
+		font-size: 1.25em;
 	}
 /* reviews */
 	.reviews {
