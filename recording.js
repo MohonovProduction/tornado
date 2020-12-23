@@ -1,10 +1,8 @@
 let recordingButton = document.querySelector('.recording-button');
-let recordingTexts = document.querySelectorAll('.recording-text');
+let icons = document.querySelector('#icons');
 
 recordingButton.onclick = function () {
-	for (let recordingText of recordingTexts) {
-		recordingText.classList.toggle('hidden')
-	}
+	$('#icons').toggle('slow')
 }
 
 let recordingMainButton = document.querySelector('#recording-button')
@@ -12,9 +10,11 @@ let contacts = document.querySelector('#recording')
 let close = document.querySelector('#close')
 
 recordingMainButton.onclick = function () {
-	recording.classList.remove('hidden')
+	//recording.classList.remove('hidden')
+	$('#recording').show('slow')
 }
 
 close.onclick = function () {
-	recording.classList.add('hidden')
+	$('#recording').hide('slow')
+	//recording.classList.add('hidden')
 }

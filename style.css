@@ -136,6 +136,10 @@
 	.aside img:last-of-type {
 		margin-bottom: 50px;
 	}
+	.aside div {
+		display: flex;
+		flex-direction: column;
+	}
 /* nav */
 	nav {
 		padding: 5px;
