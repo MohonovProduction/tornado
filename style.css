@@ -370,6 +370,7 @@
 	}
 	footer ul {
 		list-style: none;
+		width: 40%;
 	}
 	footer li {
 		padding: 10px;
@@ -385,16 +386,89 @@
 	footer img {
 		opacity: 0.5;
 		margin: 10px;
-		width:25%;
-		height: 25%
+		width: calc(30px + 5%);
 	}
 	footer div {
 		height: 50%;
+		width: 40%;
 	}
-	.contacts-footer > div {
+	.contacts-footer div {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
+	}
+	.contacts-footer div:hover {
+		cursor: pointer;
+	}
+/* recording */
+	.background {
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100vh;
+		background: rgba(60, 44, 131, 0.7);
+	}
+	div.recording {
+		padding: 20px;
+		position: fixed;
+		left: 10%;
+		top: 10vh;
+		width: 80%;
+		height: calc(auto + 30px);
+		background: #fff;
+		border-radius: 30px;
+	}
+	h2.recording {
+		margin: 10px 10px;
+		text-align: center;
+		font-size: 3em;
+		color: #3c2c83;
+	}
+	button.recording {
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		padding: 10px;
+		user-select: none;
+		outline: none;
+		background: #3c2c83;
+		border: none;
+		color: #fff;
+		font-size: 1em;	
+		cursor: pointer;
+		border-radius: 10px;
+	}
+	.recording-contacts {
+		margin: 40px 20px 40px 20px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+
+	}
+	.recording-contacts div {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		transition: 0.3s;
+		width: 200px;
+	}
+	.recording-contacts div:hover {
+		transform: scale(1.1);
+		transition: 0.3s;
+	}
+	.recording-contacts p {
+		color: #3c2c83;
+		font-size: 20px;
+		align-self: center;
+		margin: 0px 10px;
+	}
+	.recording-contacts img {
+		width: 30%;
+		margin: 10px;
 	}
 /* JS */
 	.hidden {

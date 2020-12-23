@@ -6,3 +6,15 @@ recordingButton.onclick = function () {
 		recordingText.classList.toggle('hidden')
 	}
 }
+
+let recordingMainButton = document.querySelector('#recording-button')
+let contacts = document.querySelector('#recording')
+let close = document.querySelector('#close')
+
+recordingMainButton.onclick = function () {
+	recording.classList.remove('hidden')
+}
+
+close.onclick = function () {
+	recording.classList.add('hidden')
+}
