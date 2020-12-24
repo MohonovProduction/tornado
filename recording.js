@@ -1,20 +1,25 @@
-let recordingButton = document.querySelector('.recording-button');
-let icons = document.querySelector('#icons');
+let message = document.querySelector('.message')
+let messageButton = document.querySelector('.message-button')
+let isMessageActive = false;
 
-recordingButton.onclick = function () {
-	$('#icons').toggle('slow')
+messageButton.onclick = function () {
+	if (isMessageActive) {
+		$('.message').fadeOut(500)
+		isMessageActive = false
+	} else {
+		$('.message').fadeIn(500)
+		isMessageActive = true
+	}
 }
 
-let recordingMainButton = document.querySelector('#recording-button')
-let contacts = document.querySelector('#recording')
-let close = document.querySelector('#close')
+let recordingMainButton = document.querySelector('.main-button')
+let contacts = document.querySelector('.pop-up')
+let close = document.querySelector('.close')
 
 recordingMainButton.onclick = function () {
-	//recording.classList.remove('hidden')
-	$('#recording').show('slow')
+	$('.pop-up').fadeIn(500)
 }
 
 close.onclick = function () {
-	$('#recording').hide('slow')
-	//recording.classList.add('hidden')
+	$('.pop-up').fadeOut(500)
 }
