@@ -3,7 +3,7 @@
 		font-family: sans-serif;
 	}
 	html {
-
+		scroll-behavior: smooth;
 		margin: 0px; 
 	}
 	body {
@@ -256,9 +256,13 @@
 	}
 /* reviews */
 	.reviews {
-		display: flex;
-		align-items: center;
+		display: grid;
 		justify-content: center;
+		grid-template-columns: repeat(auto-fit, 300px);
+		grid-gap: 20px;
+	}
+	img.reviews {
+		width: 300px;
 	}
 /* map */
 	section.map .map {
@@ -273,7 +277,7 @@
 	}
 	div.schedule {
 		display: grid;
-		grid-template-columns: repeat(3, auto);
+		grid-template-columns: repeat( 3, auto);
 	}
 	.schedule caption {
 		margin-bottom: 10px;
@@ -399,6 +403,9 @@
 		opacity: 0.5;
 		margin: 10px;
 		width: calc(30px + 5%);
+	}
+	.contacts-footer div:hover + img {
+		opacity: 1;
 	}
 	footer div {
 		height: 50%;
