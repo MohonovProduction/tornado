@@ -245,6 +245,9 @@
 	.galery img {
 		width: 100%;
 	}
+	.filter {
+		filter: brightness(1.3);
+	}
 
 	.text h3 {
 		width: 100%;
