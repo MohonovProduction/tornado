@@ -196,7 +196,8 @@
 	.about p, .about ul {
 		font-size: 1.25em;
 		margin: 0px 20px;
-		text-align: justify;
+		text-align: left;
+		line-height: 30px;
 	}
 	.about ul {
 		margin: 0px 0px 15px 0px;
