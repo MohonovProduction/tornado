@@ -26,12 +26,7 @@
 	section {
 		padding: 70px 10vw 0px;
 	}
-	@media (max-width: 479px) {
-		h2 {
-			text-align: center;
-			padding: none !important;
-		}
-	}
+
 /* header */
 	header {
 		display: flex;
@@ -164,12 +159,6 @@
 	.message div {
 		display: flex;
 		flex-direction: column;
-	}
-	@media (max-width: 479px) {
-		.asaide {
-			bottom: 10px;
-			right: 10px;
-		}
 	}
 /* nav */
 	nav {
@@ -327,6 +316,7 @@
 /* schedule */
 	.schedule h2 {
 		padding-left: 10vw;
+		text-align: left;
 	}
 	section.schedule {
 		padding: 70px 0px 0px;
@@ -355,6 +345,10 @@
 		div.schedule {
 			overflow-y: visible;
 			overflow-x: scroll;
+		}
+		.schedule h2 {
+			text-align: center;
+			padding: 0;
 		}
 	}
 
@@ -386,7 +380,8 @@
 		overflow-x: scroll;
 	}
 	.cost h2 {
-		margin-left: 10vw;
+		text-align: center;
+		padding-left: 10vw;
 	}
 	.cost table {
 		width: 100%;
@@ -434,6 +429,10 @@
 		.cost > div {
 			overflow-y: visible;
 			overflow-x: scroll;
+		}
+		.cost h2 {
+			text-align: center;
+			padding: 0;
 		}
 	}
 /* contacts */
@@ -598,3 +597,8 @@
 	.hidden {
 		display: none;
 	}
+@media (max-width: 479px) {
+	h2 {
+		text-align: center;
+	}
+}
