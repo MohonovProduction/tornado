@@ -23,3 +23,5 @@ recordingMainButton.onclick = function () {
 close.onclick = function () {
 	$('.pop-up').fadeOut(500)
 }
+
+var clipboard = new Clipboard('.vk');

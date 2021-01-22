@@ -3,6 +3,7 @@
 <head>
 	<title>Торнадо</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link type="image/x-icon" rel="shortcut icon" href="img/icon.ico">
 </head>
@@ -205,56 +206,58 @@
 			</section>
 			<section id="cost" class="cost">
 				<h2>Стоимость</h2>
-				<table>
-					<tr>
-						<th>Количество занятий</th>
-						<th>Басейн &laquo;МЧС&raquo;</th>
-						<th>Басейн &laquo;Волна&raquo;</th>
-						<th>Басейн &laquo;Серебряная вода&raquo;</th>
-					</tr>
-					<tr>
-						<td>Пробное занятие</td>
-						<td>бесплатно</td>
-						<td>бесплатно</td>
-						<td>бесплатно</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>800&#x20bd;</td>
-						<td>800&#x20bd;</td>
-						<td>800&#x20bd;</td>
-					</tr>
-					<tr>
-						<td>4</td>
-						<td></td>
-						<td>2800&#x20bd;</td>
-						<td>3000&#x20bd;</td>
-					</tr>
-					<tr>
-						<td>5</td>
-						<td>3750&#x20bd;</td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>8</td>
-						<td></td>
-						<td>4800&#x20bd;</td>
-						<td>5600&#x20bd;</td>
-					</tr>
-					<tr>
-						<td>10</td>
-						<td>7000&#x20bd;</td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>20</td>
-						<td>12000&#x20bd;</td>
-						<td></td>
-						<td></td>
-					</tr>
-				</table>
+				<div>
+					<table>
+						<tr>
+							<th>Количество занятий</th>
+							<th>Басейн &laquo;МЧС&raquo;</th>
+							<th>Басейн &laquo;Волна&raquo;</th>
+							<th>Басейн &laquo;Серебряная вода&raquo;</th>
+						</tr>
+						<tr>
+							<td>Пробное занятие</td>
+							<td>бесплатно</td>
+							<td>бесплатно</td>
+							<td>бесплатно</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>800&#x20bd;</td>
+							<td>800&#x20bd;</td>
+							<td>800&#x20bd;</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td></td>
+							<td>2800&#x20bd;</td>
+							<td>3000&#x20bd;</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>3750&#x20bd;</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>8</td>
+							<td></td>
+							<td>4800&#x20bd;</td>
+							<td>5600&#x20bd;</td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>7000&#x20bd;</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>20</td>
+							<td>12000&#x20bd;</td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				<div>
 			</section>
 			<section id="contacts" class="contacts">
 				<h2>Контакты</h2>
@@ -322,23 +325,23 @@
 			<h2 class="recording">Контакты</h2>
 
 			<div class="recording-contacts">
-				<div>
+				<div data-clipboard-target="https://vk.com/wpclubtornado" class="vk">
 					<img src="files/vk-bg.png">
 					<p>ВКонтакте</p>
 				</div>
-				<div>
+				<div data-clipboard-target="https://www.instagram.com/wpclubtornado/" class="inst">
 					<img src="files/instagram-bg.png">
 					<p>Instagram</p>
 				</div>
-				<div>
+				<div data-clipboard-target="+79675508163" class="wht"> 
 					<img src="files/whatsapp-bg.png">
 					<p>What's app</p>
 				</div>
-				<div>
+				<div data-clipboard-target="+79675508163" class="vib">
 					<img src="files/viber-bg.png">
 					<p>Viber</p>
 				</div>
-				<div>
+				<div data-clipboard-target="@wpclubtornado" class="tel">
 					<img src="files/telegram.png">
 					<p>Telegram</p>
 				</div>
@@ -350,5 +353,7 @@
 	<script src="jquery-3.5.1.min.js"></script>
 	<script type="text/javascript" src="galery.js"></script>
 	<script type="text/javascript" src="recording.js"></script>
+	<script src="clipboardmaster\dist\clipboard.min.js"></script>
+
 </body>
 </html>
