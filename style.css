@@ -17,6 +17,7 @@
 		font-size: 60px;
 		margin: 0px 0px 20px 0px;
 		font-weight: normal;
+		text-align: left;
 	}
 	h4 {
 		margin: 20px 0px 5px 15px;
@@ -24,6 +25,12 @@
 	}
 	section {
 		padding: 70px 10vw 0px;
+	}
+	@media (max-width: 479px) {
+		h2 {
+			text-align: center;
+			padding: none !important;
+		}
 	}
 /* header */
 	header {
@@ -157,6 +164,12 @@
 	.message div {
 		display: flex;
 		flex-direction: column;
+	}
+	@media (max-width: 479px) {
+		.asaide {
+			bottom: 10px;
+			right: 10px;
+		}
 	}
 /* nav */
 	nav {
@@ -292,6 +305,9 @@
 			grid-template-areas: 
 				'card card'
 				'button-left button-right';
+		}
+		section.galery {
+			padding: 0;
 		}
 	}
 /* reviews */
