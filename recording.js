@@ -24,4 +24,4 @@ close.onclick = function () {
 	$('.pop-up').fadeOut(500)
 }
 
-var clipboard = new Clipboard('.vk');
+var clipboard = new ClipboardJS('.vk');
