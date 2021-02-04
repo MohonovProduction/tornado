@@ -37,6 +37,11 @@
 		background: #3c2c83 url(img/headerbg-min.jpg) no-repeat;
 		background-size: auto 100vh;
 	}
+	@media (min-width: 1430px) {
+		header {
+			background-size: 100vw auto;
+		}
+	}
 	.logo {
 		display: flex;
 		flex-direction: row;
