@@ -442,7 +442,10 @@
 		}
 	}
 /* contacts */
-	.contacts > div {
+	section.contacts {
+		padding: 70px 20px;
+	}
+	.contacts > a {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
@@ -451,9 +454,18 @@
 		margin: 5vh;
 		width: 10vh;
 	}
+
 	.contacts p, .contacts a {
 		font-size: 40px;
 	}
+	.contacts a:link {
+		text-decoration: none;
+		color: #fff;
+	}
+	.contacts a:visited {
+		color: #fff;
+	}
+	
 	@media (max-width: 479px) {
 		.contacts p, .contacts a {
 			font-size: 20px;
