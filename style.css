@@ -143,7 +143,6 @@
 	.aside img {
 		width: 70px;
 		height: 70px;
-		margin: 10px;
 		transition: 0.3s;
 	}
 	.aside img:hover {
@@ -159,6 +158,13 @@
 	.message div {
 		display: flex;
 		flex-direction: column;
+	}
+
+	@media (max-width: 479px) {
+		.aside {
+			bottom: 10px;
+			right: 10px;
+		}
 	}
 /* nav */
 	nav {
@@ -229,17 +235,15 @@
 		}
 	}
 /* galery */
-	.galery h2 {
-			padding-left: 10vw;
-	}
 	.galery-card {
 		grid-area: card;
 	}
 	section.galery {
-			padding: 70px 20px 0px;
+		padding: 70px 20px;
 	}
 	div.galery {
 		width: 100%;
+		height: 100vh;
 		display: grid;
 		grid-template-areas: 'button-left card button-right';
 		grid-gap: 20px;
@@ -292,12 +296,13 @@
 
 	@media (max-width: 479px) {
 		div.galery {
+			height: 70vh;
 			grid-template-areas: 
 				'card card'
 				'button-left button-right';
 		}
 		section.galery {
-			padding: 0;
+			padding: 70px 0px;
 		}
 	}
 /* reviews */
@@ -571,7 +576,7 @@
 		transition: 0.3s;
 		width: 200px;
 	}
-	.recording-contacts div:hover {
+	.recording-contacts div:hover, .recording-contacts a:hover {
 		transform: scale(1.1);
 		transition: 0.3s;
 	}
