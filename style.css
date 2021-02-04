@@ -24,7 +24,7 @@
 		font-size: 1.25em;
 	}
 	section {
-		padding: 70px 10vw 0px;
+		padding: 70px 10vw;
 	}
 
 /* header */
@@ -35,7 +35,7 @@
 		align-items: center;
 		height: 100vh;
 		background: #3c2c83 url(img/headerbg-min.jpg) no-repeat;
-		background-size: 100% 100vh;
+		background-size: auto 100vh;
 	}
 	.logo {
 		display: flex;
@@ -200,10 +200,6 @@
 	nav a:active {
 	}
 /* about */
-	section.about {
-		margin: 0px 0px 0px 0px;
-		padding: 70px 10vw 0px;
-	}
 	div.about {
 		display: flex;
 		flex-direction: row;
@@ -331,7 +327,7 @@
 		display: grid;
 		grid-template-columns: repeat( 3, auto);
 		overflow-y: visible;
-		overflow-x: scroll;
+		overflow-x: visible;
 	}
 	.schedule caption {
 		margin-bottom: 10px;
@@ -347,11 +343,14 @@
 		text-align: center;
 	}
 
-	@media (max-width: 479px) {
+	@media (max-width: 980px) {
 		div.schedule {
 			overflow-y: visible;
 			overflow-x: scroll;
 		}
+	}
+
+	@media (max-width: 479px) {
 		.schedule h2 {
 			text-align: center;
 			padding: 0;
@@ -383,10 +382,10 @@
 	}
 	.cost > div {
 		overflow-y: visible;
-		overflow-x: scroll;
+		overflow-x: visible;
 	}
 	.cost h2 {
-		text-align: center;
+		text-align: left;
 		padding-left: 10vw;
 	}
 	.cost table {
@@ -431,11 +430,14 @@
 		padding: 40px 0px 40px 0px;
 	}
 
-	@media (max-width: 479px) {
+	@media (max-width: 980px) {
 		.cost > div {
 			overflow-y: visible;
 			overflow-x: scroll;
 		}
+	}
+
+	@media (max-width: 479px) {
 		.cost h2 {
 			text-align: center;
 			padding: 0;
