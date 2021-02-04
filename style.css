@@ -239,7 +239,7 @@
 		grid-area: card;
 	}
 	section.galery {
-		padding: 70px 20px;
+		padding: 70px 10vw 0px;
 	}
 	div.galery {
 		width: 100%;
